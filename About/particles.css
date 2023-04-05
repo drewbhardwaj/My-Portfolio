@@ -1,0 +1,29 @@
+
+.particle {
+    position: relative;
+    opacity: 0;
+    /* left: 90%; */
+    bottom: 50vh;
+    /* bottom: -1vh; */
+    aspect-ratio: 1;
+    background-color: rgb(255, 255, 255);
+
+    /* animation: animate 2999ms infinite;
+    animation-delay: 2000ms; */
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0);
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, -100vh);
+        /* transform: translate(0, -100vh) scale(0.2); */
+    }
+}
